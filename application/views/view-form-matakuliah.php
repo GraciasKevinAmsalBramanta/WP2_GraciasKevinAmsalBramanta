@@ -10,7 +10,7 @@
             <table>
                 <tr>
                     <th colspan="3">
-                        Tampil Data Mata Kuliah
+                        Form Input Matakuliah
                     </th>
                 </tr>
                 <tr>
@@ -22,26 +22,31 @@
                     <th>Kode MTK</th>
                     <th>:</th>
                     <td>
-                        <?= $kode ?>
+                        <input type="text" name="kode" id="kode">
                     </td>
                 </tr>
                 <tr>
-                    <th>Kode MTK</th>
+                    <th>Nama MTK</th>
                     <th>:</th>
                     <td>
-                        <?= $nama ?>
+                        <input type="text" name="nama" id="nama">
                     </td>
                 </tr>
                 <tr>
                     <th>SKS</th>
                     <th>:</th>
                     <td>
-                        <?= $sks ?>
+                        <select name="sks" id="sks">
+                            <option value="">Pilih SKS</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="3" align="center">
-                        <a href="<?= base_url('matakuliah') ?>">Kembali</a>
+                        <input type="submit" value="Submit">
                     </td>
                 </tr>
             </table>
