@@ -163,4 +163,10 @@ class Autentifikasi extends CI_Controller
             redirect('autentifikasi');
         }
     }
+
+    public function logout()
+    {
+        $this->session->sess_destroy();
+        redirect('autentifikasi');
+    }
 }
